@@ -35,6 +35,9 @@ We do below complex manipulations with casts to Lock due potential class loader 
 Note that it is very important to have freemarker in the system class path
 */
 class FreemarkerConfiguration() : Configuration(), Shareable, Lock {
+    public override fun tryLock(p0: Long, p1: TimeUnit): Boolean {
+        throw UnsupportedOperationException()
+    }
     val lock = ReentrantLock()
 
     public override fun lock() = lock.lock()
@@ -43,11 +46,11 @@ class FreemarkerConfiguration() : Configuration(), Shareable, Lock {
 
     public override fun unlock()  = lock.unlock()
 
-    public override fun tryLock(time: Long, unit: TimeUnit?): Boolean  = lock.tryLock(time, unit)
+    public fun tryLock(time: Long, unit: TimeUnit?): Boolean  = lock.tryLock(time, unit)
 
     public override fun lockInterruptibly() = lock.lockInterruptibly()
 
-    public override fun newCondition(): Condition? = lock.newCondition()
+    public override fun newCondition(): Condition = lock.newCondition()
 
    ;{
         setObjectWrapper(JsonWrapper())

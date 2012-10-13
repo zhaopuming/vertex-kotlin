@@ -7,7 +7,7 @@
 
     <groupId>org.vertx</groupId>
     <artifactId>vertx-kotlin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
 
     <prerequisites>
         <maven>3.0.3</maven>
@@ -19,6 +19,8 @@
         <kotlin.version>0.1-SNAPSHOT</kotlin.version>
         <surefire-version>2.12</surefire-version>
         <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
+        <sourceEncoding>UTF-8</sourceEncoding>
+        <compileSource>1.6</compileSource>
     </properties>
 
     <dependencies>
@@ -68,19 +70,10 @@
     </dependencies>
 
     <repositories>
+
         <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>jetbrains-release</id>
-            <name>jetbrains-release</name>
-            <url>http://repository.jetbrains.com/releases</url>
-        </repository>
-        <repository>
-            <snapshots/>
-            <id>jetbrains-snapshots</id>
-            <name>jetbrains-snapshots</name>
-            <url>http://repository.jetbrains.com/snapshots</url>
+            <id>jetbrains-all</id>
+            <url>http://repository.jetbrains.com/all</url>
         </repository>
         <repository>
             <snapshots/>
@@ -91,18 +84,8 @@
     </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>jetbrains-repo</id>
-            <name>jetbrains-repo</name>
-            <url>http://repository.jetbrains.com/repo</url>
-        </pluginRepository>
-        <pluginRepository>
-            <snapshots/>
-            <id>jetbrains-repo-snapshots</id>
-            <name>jetbrains-repo-snapshots</name>
-            <url>http://repository.jetbrains.com/repo</url>
+            <id>jetbrains-all</id>
+            <url>http://repository.jetbrains.com/all</url>
         </pluginRepository>
     </pluginRepositories>
 
@@ -113,14 +96,17 @@
 
 
         <plugins>
+
+            <!--
             <plugin>
-                <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
+                <groupId>org.jetbrains.kotlin</groupId>
                 <version>${kotlin.version}</version>
+
                 <executions>
                     <execution>
                         <id>compile</id>
-                        <phase>compile</phase>
+                        <phase>process-sources</phase>
                         <goals>
                             <goal>compile</goal>
                         </goals>
@@ -128,13 +114,14 @@
 
                     <execution>
                         <id>test-compile</id>
-                        <phase>test-compile</phase>
+                        <phase>process-test-sources</phase>
                         <goals>
                             <goal>test-compile</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
+            -->
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire-version}</version>

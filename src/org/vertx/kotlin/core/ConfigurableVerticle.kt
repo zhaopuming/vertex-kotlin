@@ -25,11 +25,11 @@ public trait ConfigurableVerticle : Verticle {
 
     protected fun loadConfiguredVerticles() {
         val config = this.config
-        val verticles = config.getField("nested_verticles")
+        val verticles : JsonArray = config.getArray("nested_verticles")!!
         if(verticles != null)
             when(verticles) {
                 is JsonArray ->
-                    for(val verticle in verticles as JsonArray) {
+                    for(val verticle in verticles.toArray()!!) {
                         loadConfiguredVerticle(verticle as JsonObject)
                     }
                 is JsonObject ->

@@ -336,16 +336,6 @@
     <mapping directory="" vcs="Git" />
   </component>
   <component name="libraryTable">
-    <library name="KotlinRuntime">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../jet/out/artifacts/Kotlin/kotlinc/lib/kotlin-compiler.jar!/" />
-        <root url="jar://$PROJECT_DIR$/../jet/out/artifacts/Kotlin/kotlinc/lib/kotlin-runtime.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$PROJECT_DIR$/../jet/out/artifacts/Kotlin/kotlinc/lib/kotlin-runtime.jar!/src" />
-      </SOURCES>
-    </library>
     <library name="Maven: asm:asm-analysis:3.3.1">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/asm/asm-analysis/3.3.1/asm-analysis-3.3.1.jar!/" />
