@@ -36,18 +36,12 @@
         <dependency>
             <groupId>org.vert-x</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>1.1.0.final</version>
-            <!-- TODO hack until the jars are in a central repo -->
-            <systemPath>${basedir}/lib/vert.x-core-1.1.0.final.jar</systemPath>
-            <scope>system</scope>
+            <version>1.2.3.final</version>
         </dependency>
         <dependency>
             <groupId>org.vert-x</groupId>
             <artifactId>vertx-platform</artifactId>
-            <version>1.1.0.final</version>
-            <!-- TODO hack until the jars are in a central repo -->
-            <systemPath>${basedir}/lib/vert.x-platform-1.1.0.final.jar</systemPath>
-            <scope>system</scope>
+            <version>1.2.3.final</version>
         </dependency>
 
         <!-- TODO we could maybe move the freemarker stuff to a separate library? -->
@@ -90,9 +84,9 @@
         </repository>
         <repository>
             <snapshots/>
-              <id>fusesource-nexus-snapshots</id>
-              <name>FuseSource Nexus Snapshots</name>
-              <url>http://repo.fusesource.com/nexus/content/repositories/snapshots</url>
+            <id>fusesource-nexus-snapshots</id>
+            <name>FuseSource Nexus Snapshots</name>
+            <url>http://repo.fusesource.com/nexus/content/repositories/snapshots</url>
         </repository>
     </repositories>
     <pluginRepositories>
