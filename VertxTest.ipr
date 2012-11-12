@@ -402,15 +402,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/io/kool/kool-template/1.0-SNAPSHOT/kool-template-1.0-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: io.netty:netty:3.4.6.Final">
+    <library name="Maven: io.netty:netty:3.5.8.Final">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.4.6.Final/netty-3.4.6.Final.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.5.8.Final/netty-3.5.8.Final.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.4.6.Final/netty-3.4.6.Final-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.4.6.Final/netty-3.4.6.Final-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: log4j:log4j:1.2.16">
@@ -457,26 +457,26 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.19/freemarker-2.3.19-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.jetbrains.kotlin:kotlin-runtime:0.1-SNAPSHOT">
+    <library name="Maven: org.jetbrains.kotlin:kotlin-runtime:0.4.68">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-runtime/0.1-SNAPSHOT/kotlin-runtime-0.1-SNAPSHOT.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-runtime/0.4.68/kotlin-runtime-0.4.68.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-runtime/0.1-SNAPSHOT/kotlin-runtime-0.1-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-runtime/0.4.68/kotlin-runtime-0.4.68-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-runtime/0.1-SNAPSHOT/kotlin-runtime-0.1-SNAPSHOT-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-runtime/0.4.68/kotlin-runtime-0.4.68-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.jetbrains.kotlin:kotlin-stdlib:0.1-SNAPSHOT">
+    <library name="Maven: org.jetbrains.kotlin:kotlin-stdlib:0.4.68">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/0.1-SNAPSHOT/kotlin-stdlib-0.1-SNAPSHOT.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/0.4.68/kotlin-stdlib-0.4.68.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/0.1-SNAPSHOT/kotlin-stdlib-0.1-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/0.4.68/kotlin-stdlib-0.4.68-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/0.1-SNAPSHOT/kotlin-stdlib-0.1-SNAPSHOT-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/0.4.68/kotlin-stdlib-0.4.68-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.mozilla:rhino:1.7R4">
@@ -534,26 +534,26 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.vert-x:vertx-core:1.2.3.final">
+    <library name="Maven: org.vert-x:vertx-core:1.3.0.final">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-core/1.2.3.final/vertx-core-1.2.3.final.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-core/1.3.0.final/vertx-core-1.3.0.final.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-core/1.2.3.final/vertx-core-1.2.3.final-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-core/1.3.0.final/vertx-core-1.3.0.final-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-core/1.2.3.final/vertx-core-1.2.3.final-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-core/1.3.0.final/vertx-core-1.3.0.final-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.vert-x:vertx-platform:1.2.3.final">
+    <library name="Maven: org.vert-x:vertx-platform:1.3.0.final">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-platform/1.2.3.final/vertx-platform-1.2.3.final.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-platform/1.3.0.final/vertx-platform-1.3.0.final.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-platform/1.2.3.final/vertx-platform-1.2.3.final-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-platform/1.3.0.final/vertx-platform-1.3.0.final-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-platform/1.2.3.final/vertx-platform-1.2.3.final-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/vert-x/vertx-platform/1.3.0.final/vertx-platform-1.3.0.final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="org.freemarker:freemarker:2.3.19">
