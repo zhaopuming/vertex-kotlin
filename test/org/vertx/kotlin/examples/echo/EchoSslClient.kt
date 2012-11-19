@@ -27,7 +27,7 @@ public class EchoSslClient() : Verticle() {
             setSSL(true)
             setTrustAll(true)
 
-            connect(1234){ socket ->
+            connect(1234) { socket ->
                 socket.dataHandler{ buffer ->
                     System.out.println("Net client receiving:\n-------\n$buffer\n-------")
                 }

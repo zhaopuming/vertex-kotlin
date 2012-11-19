@@ -16,7 +16,7 @@ public trait ConfigurableVerticle : Verticle {
 
         val main = config.getString("verticle_main")!!
         logger.info("Deploying $main. $instances instance(s) Configuration:\n$config")
-        deployVerticle(
+        deployVerticle (
                 main,
                 config,
                 instances
