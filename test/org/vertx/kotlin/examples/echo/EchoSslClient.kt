@@ -33,7 +33,7 @@ public class EchoSslClient() : Verticle() {
                 }
 
                 //Now send some data
-                for (var i in 0..9) {
+                for (i in 0..9) {
                     val str = "hello$i\n"
                     System.out.print("Net client sending: $str")
                     socket.write(str)

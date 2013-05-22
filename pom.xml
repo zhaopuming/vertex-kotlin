@@ -7,7 +7,7 @@
 
     <groupId>org.vertx</groupId>
     <artifactId>vertx-kotlin</artifactId>
-    <version>0.4.68</version>
+    <version>0.5.429</version>
 
     <prerequisites>
         <maven>3.0.3</maven>
@@ -16,11 +16,11 @@
     <properties>
         <junit-version>4.10</junit-version>
         <koolio.version>1.0-SNAPSHOT</koolio.version>
-        <kotlin.version>0.4.68</kotlin.version>
+        <kotlin.version>0.5.429</kotlin.version>
         <surefire-version>2.12</surefire-version>
         <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
         <sourceEncoding>UTF-8</sourceEncoding>
-        <compileSource>1.6</compileSource>
+        <compileSource>1.7</compileSource>
     </properties>
 
     <dependencies>
@@ -30,20 +30,14 @@
             <version>${kotlin.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty</artifactId>
-            <version>3.5.8.Final</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>org.vert-x</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>1.3.0.final</version>
+            <version>1.3.1.final</version>
         </dependency>
         <dependency>
             <groupId>org.vert-x</groupId>
             <artifactId>vertx-platform</artifactId>
-            <version>1.3.0.final</version>
+            <version>1.3.1.final</version>
         </dependency>
 
         <!-- TODO we could maybe move the freemarker stuff to a separate library? -->
@@ -94,8 +88,8 @@
         <sourceDirectory>src</sourceDirectory>
         <testSourceDirectory>test</testSourceDirectory>
 
-
         <plugins>
+
 
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
@@ -105,14 +99,18 @@
                 <executions>
                     <execution>
                         <id>compile</id>
-                        <phase>compile</phase>
-                        <goals> <goal>compile</goal> </goals>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
                     </execution>
 
                     <execution>
                         <id>test-compile</id>
-                        <phase>test-compile</phase>
-                        <goals> <goal>test-compile</goal> </goals>
+                        <phase>process-test-sources</phase>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>

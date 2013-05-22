@@ -23,7 +23,7 @@ public fun Verticle.setPeriodic(l: Long, longHandler: (Long)->Unit) : Long = get
 public val Verticle.eventBus: EventBus
     get() = getVertx()!!.eventBus()!!
 
-public fun Verticle.runOnLoop(handler: ()->Any?) : Unit = getVertx().runOnLoop(handler);
+public fun Verticle.runOnLoop(handler: ()->Any) : Unit = getVertx().runOnLoop(handler);
 
 public val Verticle.logger: Logger
     get() = getContainer()!!.getLogger()!!
@@ -34,10 +34,10 @@ public val Verticle.config: JsonObject
         return if(config == null) JsonObject() else config
     }
 
-public fun Verticle.deployVerticle(main: String, config: JsonObject = JsonObject(), instances: Int = 1, doneHandler: ((String)->Any?)? = null) {
+public fun Verticle.deployVerticle(main: String, config: JsonObject = JsonObject(), instances: Int = 1, doneHandler: ((String)->Any)? = null) {
     getContainer()!!.deployVerticle(main, config, instances, if(doneHandler!=null) handler(doneHandler) else null)
 }
 
-public fun Verticle.deployVerticle(main: java.lang.Class<*>, config: JsonObject = JsonObject(), instances: Int = 1, doneHandler: ((String)->Any?)? = null) {
+public fun Verticle.deployVerticle(main: java.lang.Class<*>, config: JsonObject = JsonObject(), instances: Int = 1, doneHandler: ((String)->Any)? = null) {
     getContainer()!!.deployVerticle(main.getName(), config, instances, if(doneHandler!=null) handler(doneHandler) else null)
 }

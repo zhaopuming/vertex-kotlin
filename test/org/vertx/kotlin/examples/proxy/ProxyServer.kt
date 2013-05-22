@@ -55,7 +55,7 @@ public class ProxyServer() : Verticle() {
 */
                 req.dataHandler { data ->
                     println("Proxying response body:" + data)
-                    forwardReq.write(data)
+                    forwardReq.write(data)!!
                 }
                 req.endHandler {
                     forwardReq.end()

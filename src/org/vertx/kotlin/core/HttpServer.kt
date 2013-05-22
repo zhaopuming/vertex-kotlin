@@ -22,14 +22,14 @@ import org.vertx.java.core.http.RouteMatcher
 import org.vertx.java.core.Handler
 import org.vertx.java.core.Vertx
 
-public fun HttpServer.requestHandler(handlerFun: HttpServerRequest.()->Any?): HttpServer
+public fun HttpServer.requestHandler(handlerFun: HttpServerRequest.()->Any): HttpServer
         = requestHandler(handler(handlerFun))!!
 
-public fun HttpServer.websocketHandler(handlerFun: (ServerWebSocket)->Any?): HttpServer
+public fun HttpServer.websocketHandler(handlerFun: (ServerWebSocket)->Any): HttpServer
         = websocketHandler(handler(handlerFun))!!
 
 public fun HttpServer.routeMatcher(config: RouteMatcher.()->Unit): HttpServer
-        = requestHandler(RouteMatcher(config) as Handler<HttpServerRequest?>)!!
+        = requestHandler(RouteMatcher(config) as Handler<HttpServerRequest>)!!
 
 public var HttpServer.sendBufferSize : Int
     get() = getSendBufferSize()!!

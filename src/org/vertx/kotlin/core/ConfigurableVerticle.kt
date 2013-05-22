@@ -29,7 +29,7 @@ public trait ConfigurableVerticle : Verticle {
         if(verticles != null)
             when(verticles) {
                 is JsonArray ->
-                    for(val verticle in verticles.toArray()!!) {
+                    for(verticle in verticles.toArray()!!) {
                         loadConfiguredVerticle(verticle as JsonObject)
                     }
                 is JsonObject ->

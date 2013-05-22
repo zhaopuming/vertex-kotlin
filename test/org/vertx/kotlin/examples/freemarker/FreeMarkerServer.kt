@@ -49,8 +49,8 @@ public class FreeMarkerServer() : Verticle() {
                     putString("message", "Hello, World!")!!.
                     putArray("list", JsonArray().addString("item 1")!!.addString("item 2")!!.addString("item 3"))
 
-                    val messageHandler : Handler<Message<JsonObject?>?> =
-                            handler<Message<JsonObject?>>{ reply ->
+                    val messageHandler : Handler<Message<JsonObject>> =
+                            handler<Message<JsonObject>>{ reply ->
                                 end(reply.body!!.getString("rendered") as String)
                             }
 
